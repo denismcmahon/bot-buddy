@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+const chatRoutes = require('./routes/chat');
+app.use('/api', chatRoutes);
 
 dotenv.config();
 
